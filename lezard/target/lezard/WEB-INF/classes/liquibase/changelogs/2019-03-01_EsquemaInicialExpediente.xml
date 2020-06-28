@@ -1,0 +1,22 @@
+<databaseChangeLog xmlns='http://www.liquibase.org/xml/ns/dbchangelog'
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ext='http://www.liquibase.org/xml/ns/dbchangelog-ext'
+	xsi:schemaLocation='
+    	http://www.liquibase.org/xml/ns/dbchangelog 
+    	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
+    	http://www.liquibase.org/xml/ns/dbchangelog-ext 
+    	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd'>
+
+	<changeSet id="createInitialScheme" author="Efren">
+		<sqlFile
+	            encoding="utf8"
+	            path="sql/2019-03-01_EsquemaInicialExpediente.sql"
+	            relativeToChangelogFile="true"/>
+	</changeSet>
+	
+	<changeSet id="insertBateryData" author="Efren">
+		<sqlFile
+	            encoding="utf8"
+	            path="sql/data.sql"
+	            relativeToChangelogFile="true"/>
+	</changeSet>
+</databaseChangeLog>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>uavig</display-name>
+<context-param>
+    <param-name>spring.profiles.active</param-name>
+<!--     <param-value>local</param-value> -->
+    <param-value>dev</param-value>
+  </context-param>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+<!-- ========================== ERRORS ========================== -->
+	<error-page>
+		<!-- Missing Login -->
+        <error-code>401</error-code>
+        <location>/WEB-INF/views/error/401.jsp</location>
+	</error-page> 
+	<error-page>
+		<!-- Forbidden directory listing -->
+        <error-code>403</error-code>
+        <location>/WEB-INF/views/error/403.jsp</location>
+	</error-page>
+	<error-page>
+		<!-- Missing Resources -->
+        <error-code>404</error-code>
+        <location>/WEB-INF/views/error/404.jsp</location>
+	</error-page>
+	<error-page>
+		<!-- Uncaught Exception -->
+        <error-code>500</error-code>
+        <location>/WEB-INF/views/error/500.jsp</location>
+	</error-page>
+	<error-page>
+		<!-- Unsupported servlet method -->
+        <error-code>503</error-code>
+        <location>/WEB-INF/views/error/503.jsp</location>
+	</error-page>
+</web-app>
