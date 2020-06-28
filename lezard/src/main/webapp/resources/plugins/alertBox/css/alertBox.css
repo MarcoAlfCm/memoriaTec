@@ -1,0 +1,86 @@
+.alertBox-parent {
+	/* POSITION */
+	position: fixed;
+	z-index: 99999999999999;
+}
+
+@media only screen and (min-width: 450px) {
+	.alertBox-container {
+    	/* SIZE */
+    	width: 380px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+	.alertBox-container {
+    	/* SIZE */
+		width: 90vw;
+    }
+}
+
+.alertBox-container {
+	/* POSITION */
+	display: block;
+	
+	/* STYLE */
+	margin-top: 40px;
+	border-radius: 3px;
+
+	/* TEXT */
+	text-align: center;
+
+	/* === VAR === */
+	background-color: #F9F9F9;
+	background: linear-gradient(60deg, #F9F9F9, #EBEBEB);
+	box-shadow: 4px 4px 15px 0px rgba(249, 249, 249, 0.75);
+}
+
+
+.alertBox-imgContainer {
+	/* POSITION */
+	top: -30px;
+	left: 20px;
+	position: relative;
+
+	/* SIZE */
+	width: 60px;
+	height: 60px;
+
+	/* STYLE */
+	border-radius: 100%;
+}
+
+.alertBox-icon {
+	/* POSITION */
+	padding-top: 13px;
+
+	/* TEXT */
+	color: #F9F9F9;
+}
+
+.alertBox-content span {
+	/* STYLE */
+	display: block;
+}
+
+.alertBox-title {
+	/* POSITION */
+	top: -30px;
+	position: relative;
+
+	/* TEXT */
+	font-size: 25px;
+	font-weight: bold;
+
+	/* === VAR === */
+	color: #607d8b;
+}
+
+
+.alertBox-text {
+	/* POSITION */
+	padding: 0px 30px 30px 30px;
+
+	/* TEXT */
+	font-size: 18px;
+}
