@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+   <!-- <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/morning"
+            android:title="TABLERO" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/day"
+            android:title="CAPTURA" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/night"
+            android:title="REPORTES" />
+
+    </group>
+-->
+
+
+    <item android:title="Sesión">
+        <menu>
+            <!--<item
+                android:id="@+id/navCuenta"
+                android:icon="@mipmap/ic_launcher_round"
+                android:title="Cuenta" />-->
+            <item
+                android:id="@+id/cerrarSesion"
+                android:icon="@drawable/ic_power_sesion"
+                android:title="CERRAR SESIÓN" />
+
+        </menu>
+    </item>
+
+</menu>
