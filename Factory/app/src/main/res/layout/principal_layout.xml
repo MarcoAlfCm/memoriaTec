@@ -6,11 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include
-        android:id="@+id/include"
-        layout="@layout/app_bar_menu"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="26dp" />
+    <include layout="@layout/content_menu" />
+    <include layout="@layout/activity_menu" />
 
     <Button
         android:id="@+id/tablero"

@@ -31,7 +31,6 @@ import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private LoginViewModel loginViewModel;
     private TextInputLayout user;
     private TextInputLayout password;
     private TextInputLayout company;
@@ -60,8 +59,8 @@ public class LoginActivity extends AppCompatActivity {
         //mostrarToastWarnign("Este es un mensaje de alerta");
         //loginViewModel.loginDataChanged(user.toString(),password.toString());
         if(validateEmail()&&validatePassword()&&validateCompany()){
-            //setLogin();
-            validarLogin();
+            setLogin();
+            //validarLogin();
         }else{
             mostrarToastError("Ingrese todos los datos.");
         }
